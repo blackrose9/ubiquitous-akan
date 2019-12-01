@@ -1,0 +1,13 @@
+body {
+    background-image: url("ghanaflag.jpeg");
+}
+
+#container{
+    margin-left: 600px;
+    background-color: whitesmoke;
+    height: 600px;
+    width: 700px;
+}
+section{
+    margin: 20px;
+}
