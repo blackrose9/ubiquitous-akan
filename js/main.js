@@ -13,7 +13,7 @@ function compute(){
         return ("Kwasi")
       }
       if (weekday === 1 && gender === "male"){
-        return ("Kwando")
+        return ("Kwandwo")
       }
       if (weekday === 2 && gender === "male"){
         return ("Kwabena")
@@ -54,7 +54,7 @@ function compute(){
       }
       //catches everything else which isn't a date.
       else {
-        return("Invalid Date");
+        return("Invalid Date use the 'MM/DD/YYYY' format");
       }
     }
 
@@ -71,7 +71,8 @@ function compute(){
 
 
 var result = akanName(weekday, gender);
-document.getElementById("displayakan").innerHTML= result;
+document.getElementById("displayday").innerHTML = "You were born on " + newdate;
+document.getElementById("displayakan").innerHTML= "Your Akan name is " + result;
 
 // console.log(akanName(weekday, gender)); 
 }
