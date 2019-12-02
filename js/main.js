@@ -54,7 +54,7 @@ function compute(){
       }
       //catches everything else which isn't a date.
       else {
-        return("Invalid Date use the 'MM/DD/YYYY' format");
+        return(alert("INVALID DATE! Please use 'MM/DD/YYYY' format"));
       }
     }
 
