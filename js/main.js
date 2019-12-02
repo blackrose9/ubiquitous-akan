@@ -58,21 +58,19 @@ function compute(){
       }
     }
 
+    //birthday
   var date = document.forms["form"]["date"].value;
   var newdate = new Date (date); 
+  // getDay() -> Sunday - Saturday : 0 - 6
   var weekday = newdate.getDay();
 
   //gender
   var genderinput = document.getElementById("gender");
   var gender = genderinput.options[genderinput.selectedIndex].text;
 
-// Sunday - Saturday : 0 - 6
+
 
 var result = akanName(weekday, gender);
-// var weekday = birthday;
-
-
-
 document.getElementById("displayakan").innerHTML= result;
 
 // console.log(akanName(weekday, gender)); 
