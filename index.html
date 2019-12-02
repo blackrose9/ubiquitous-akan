@@ -15,16 +15,17 @@
             <p>Ever wondered what your Akan name was? Find out today!</p>
         </section>
         <section id="form">
-            <form>
-                <p>Month (1-12): <input type="text" name="month"> </p>
-                <p>Day (1-31): <input type="text" name="day"> </p>
-                <p>Year (eg. 1960): <input type="text" name="year"> </p>
+            <form name="form" onsubmit="compute()">
+                <p><input type="text" name="date" placeholder="MM/DD/YYYY"/></p>
+                <!-- <p>Month (1-12): <input type="text" name="month"/> </p>
+                <p>Day (1-31): <input type="text" name="day"/> </p>
+                <p>Year (eg. 1960): <input type="text" name="year"> </p> -->
                 <select>
                     <option value="null">Gender</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select>
-                <p><input type="button" value="Submit" onclick="compute(this.form)"></p>
+                <p><input type="submit" value="Submit" onclick="compute()"></p>
             </form>
         </section>
     </div>
